@@ -9,4 +9,5 @@ LABEL project="Pilot-BIM-Server"\
 COPY build App/
 COPY settings /usr/share/ASCON/Pilot-BIM-Server
 WORKDIR /App
-ENTRYPOINT ["/bin/sh", "Ascon.Pilot.BimService"]
+ENTRYPOINT ["/bin/sh"]
+#ENTRYPOINT ["/bin/sh", "Ascon.Pilot.BimService"]
