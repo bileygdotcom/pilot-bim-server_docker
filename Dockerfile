@@ -10,3 +10,4 @@ COPY build App/
 COPY settings /usr/share/ASCON/Pilot-BIM-Server
 WORKDIR /App
 ENTRYPOINT ["dotnet", "Ascon.Pilot.BimService.dll"]
+#Entrypoint
