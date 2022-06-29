@@ -2,12 +2,11 @@
 FROM bileyg/hangar
 
 LABEL project="Pilot-BIM-Server"\
-      version="1.1" \
+      version="1.2" \
       mantainer="bileyg"\
       company="Ascon Complex"
 
 COPY build App/
 COPY settings /usr/share/ASCON/Pilot-BIM-Server
 WORKDIR /App
-ENTRYPOINT ["/bin/sh"]
-#ENTRYPOINT ["/bin/sh", "Ascon.Pilot.BimService"]
+ENTRYPOINT ["dotnet", "Ascon.Pilot.BimService.dll"]
