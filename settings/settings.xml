@@ -1,3 +1,16 @@
 <?xml version="1.0"?>
-<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ConnectionParams>
+    <UserName>bimadmin</UserName>
+    <Password />
+    <SafePassword />
+    <Server>http://localhost:5545/pilot-bim_ru</Server>
+    <Proxy>
+      <IsRequired>false</IsRequired>
+      <Port>0</Port>
+      <IsAuthRequired>false</IsAuthRequired>
+      <SafePassword />
+    </Proxy>
+    <NeedSavePassword>false</NeedSavePassword>
+  </ConnectionParams>
 </Settings>
