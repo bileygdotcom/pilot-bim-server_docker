@@ -1,12 +1,16 @@
-# syntax=docker/dockerfile:1
-FROM bileyg/hangar:1.1
+ARG BASE_IMAGE="bileyg/lichter"
+ARG TAG="0.3.0"
+FROM ${BASE_IMAGE}:${TAG}
 
-LABEL project="Pilot-BIM-Server"\
-      version="1.4" \
+LABEL project="Pilot-BIM-Server(WINE)"\
+      version="1.0.0" \
       mantainer="bileyg"\
-      company="Ascon Complex"
+      company="Ascon"
+      
+ENV ADMIN=""
+ENV PASS=""
+ENV DBCONNECT=""
 
-COPY build App/
-COPY settings /usr/share/ASCON/Pilot-BIM-Server
-WORKDIR /App
-ENTRYPOINT ["dotnet", "Ascon.Pilot.BimService.dll"]
+COPY ["build","/opt/Pilot-BIM-Server"]
+
+CMD wine /opt/Pilot-BIM-Server/Ascon.Pilot.BimService.exe -c $DBCONNECT $ADMIN $PASS
