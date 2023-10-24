@@ -1,2 +1,2 @@
 # pilot-bim-server_docker
-Docker container for Pilot-Bim-Server
+Hangar-based docker container for Pilot-Bim-Server
