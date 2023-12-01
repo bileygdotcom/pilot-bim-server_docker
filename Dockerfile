@@ -1,9 +1,9 @@
 ARG BASE_IMAGE="bileyg/lichter"
-ARG TAG="0.3.0"
+ARG TAG="0.4.0"
 FROM ${BASE_IMAGE}:${TAG}
 
 LABEL project="Pilot-BIM-Server(WINE)"\
-      version="1.0.0" \
+      version="1.1.0" \
       mantainer="bileyg"\
       company="Ascon"
       
